@@ -1,0 +1,34 @@
+name: Deploy Hugo to Server
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的推送
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # 极其重要：必须拉取 PaperMod 主题
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.146.0' # 匹配你本地的版本
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-rlgoDzvc -i --delete"
+          SOURCE: "public/"
+          REMOTE_HOST: ${{ secrets.SERVER_IP }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          TARGET: "/home/ubuntu/blog/public" # 对应你 Docker 挂载的目录
