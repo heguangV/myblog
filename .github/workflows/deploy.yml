@@ -23,12 +23,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
-          SOURCE: "public/"
-          REMOTE_HOST: ${{ secrets.SERVER_IP }}
-          REMOTE_USER: ${{ secrets.SERVER_USER }}
-          TARGET: "/home/ubuntu/blog/public" # 对应你 Docker 挂载的目录
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-hugo-deploy@v2
+        with:
+          publish_dir: ./public
+          # 这里会自动创建一个叫 gh-pages 的分支来存放网页
