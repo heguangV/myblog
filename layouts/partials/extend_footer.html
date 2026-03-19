@@ -1,0 +1,24 @@
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script>
+    // 当驱动库加载完成后，我们修改默认的模型路径为 MyGO!!!!! 的公开模型
+    // 这里使用一个网上的公开模型地址作为示例
+    window.addEventListener('load', function() {
+        if (typeof loadLive2D === 'function') {
+            // 这是驱动函数，第一个参数是 Canvas 的 ID，第二个是模型的配置文件路径
+            // 这里我们预留一个接口，如果你有自己的 moc3 文件，可以换成你的路径
+            loadLive2D("live2d", "https://fastly.jsdelivr.net/gh/iCharlesZ/Charles_Live2D_Models@latest/MyGO/tomori/model.json");
+        }
+    });
+</script>
+<style>
+    /* 你可以在这里微调看板娘的位置和大小 */
+    #waifu { 
+        left: 30px; 
+        bottom: -10px; 
+        z-index: 999; /* 确保她不被其他元素遮挡 */
+    }
+    #live2d {
+        width: 300px; /* 适当放大一点 */
+        height: 350px;
+    }
+</style>

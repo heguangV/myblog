@@ -1,0 +1,23 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-cn'
+title = 'Dust'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "light"
+    # 这里换成你喜欢的角色名字
+    author = "Dust"
+    description = "少女祈祷中..."
+    
+    # 社交链接（可选）
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/"
+
+[params.profileMode]
+    enabled = true
+    title = "welcome"
+    subtitle = "Dust"
+    imageUrl = "avatar.jpg" # 对应 static/avatar.png
+    imageWidth = 120
+    imageHeight = 120
