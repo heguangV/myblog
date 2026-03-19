@@ -24,7 +24,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-hugo-deploy@v2
+        uses: peaceiris/actions-gh-pages@v4  # 修正了仓库名，并使用了最新的 v4 版本
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 这是一个内置变量，不需要你手动去 Secrets 填
           publish_dir: ./public
-          # 这里会自动创建一个叫 gh-pages 的分支来存放网页
