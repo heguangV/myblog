@@ -1,4 +1,4 @@
-baseURL = "https://Dust.github.io/myblog/"
+baseURL = "https://heguangv.github.io/myblog/"
 languageCode = 'zh-cn'
 title = 'Dust'
 theme = 'PaperMod'
@@ -18,6 +18,6 @@ theme = 'PaperMod'
     enabled = true
     title = "welcome"
     subtitle = "Dust"
-    imageUrl = "avatar.jpg" # 对应 static/avatar.png
+    imageUrl = "./avatar.jpg" # 对应 static/avatar.jpg
     imageWidth = 120
     imageHeight = 120
