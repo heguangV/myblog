@@ -1,0 +1,68 @@
+[[main]]
+    identifier = "home"
+    name       = "首页"
+    url        = "/"
+    weight     = 10
+
+    [main.params]
+        icon = "home"
+
+[[main]]
+    identifier = "about"
+    name       = "关于"
+    url        = "/about/"
+    weight     = 20
+
+    [main.params]
+        icon = "user"
+
+[[main]]
+    identifier = "links"
+    name       = "友链"
+    url        = "/links/"
+    weight     = 30
+
+    [main.params]
+        icon = "link"
+
+[[main]]
+    identifier = "search"
+    name       = "搜索"
+    url        = "/search/"
+    weight     = 40
+
+    [main.params]
+        icon = "search"
+
+[[main]]
+    identifier = "archives"
+    name       = "文章"
+    url        = "/archives/"
+    weight     = 50
+
+    [main.params]
+        icon = "archives"
+
+[[social]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/heguangV"
+
+    [social.params]
+        icon = "brand-github"
+
+[[social]]
+    identifier = "bilibili"
+    name       = "Bilibili"
+    url        = "https://space.bilibili.com/472796895?spm_id_from=333.1007.0.0"
+
+    [social.params]
+        icon = "brand-bilibili"
+
+[[social]]
+    identifier = "steam"
+    name       = "Steam"
+    url        = "https://steamcommunity.com/profiles/76561198981841671/"
+
+    [social.params]
+        icon = "brand-steam"
