@@ -6,6 +6,7 @@ favicon        = "avatar.jpg"
     since = 2020
 
 [sidebar]
+    avatar   = "huge-avatar.jpg"
     emoji    = "🥺"
     subtitle = "愿做大千世界的一抹尘埃"
 
