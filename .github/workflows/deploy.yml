@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --quiet
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4  # 修正了仓库名，并使用了最新的 v4 版本
