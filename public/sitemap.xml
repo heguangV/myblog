@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>http://localhost:1313/en/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:1313/zh/sitemap.xml</loc>
-    
-      <lastmod>2026-03-25T23:34:31+08:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:1313/zh-hant-tw/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:1313/ja/sitemap.xml</loc>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/myblog/categories/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/tags/hugo/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/p/my-first-blog/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/post/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/tags/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2026-03-25T23:34:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/myblog/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/myblog/archives/</loc>
+  </url><url>
+    <loc>http://localhost:1313/myblog/search/</loc>
+  </url><url>
+    <loc>http://localhost:1313/myblog/links/</loc>
+  </url>
+</urlset>
