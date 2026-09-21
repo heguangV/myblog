@@ -24,8 +24,8 @@ favicon        = "avatar.jpg"
     page     = [{ type = "toc" }]
 
 [comments]
-    # See complete configuration in config/_default/params.toml
-    enabled  = true
+    # Keep third-party comments disabled until a real provider is configured.
+    enabled  = false
     provider = "disqus"
 
 [colorScheme]

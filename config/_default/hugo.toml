@@ -6,7 +6,7 @@ title                  = "Dust"
 defaultContentLanguage = "zh"
 # Set hasCJKLanguage to true if DefaultContentLanguage is a CJK language
 # This will make .Summary and .WordCount behave correctly
-hasCJKLanguage         = false
+hasCJKLanguage         = true
 
 [[module.imports]]
     path = "hugo-theme-stack"
@@ -17,6 +17,3 @@ hasCJKLanguage         = false
 [permalinks]
     post = "/p/:slug/"
     page = "/:slug/"
-
-[services.disqus]
-    shortname = "Dust"

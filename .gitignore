@@ -1,0 +1,11 @@
+# Hugo build output and generated resource cache
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Local Hugo downloads
+/hugo_extended_*.tar.gz
+
+# Local credentials must never be committed
+/github
+/github.pub
